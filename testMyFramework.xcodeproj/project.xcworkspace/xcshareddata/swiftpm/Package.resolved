@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "myframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shujataliz/MyFramework.git",
+      "state" : {
+        "revision" : "15fd7dd7d19dbf6cbfe1f037b0848380c02709fa",
+        "version" : "1.0.19"
+      }
+    }
+  ],
+  "version" : 2
+}

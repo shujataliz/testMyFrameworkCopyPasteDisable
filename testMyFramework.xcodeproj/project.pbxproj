@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501845C02B20E87F009BCA7A /* MyFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 501845BF2B20E87F009BCA7A /* MyFramework */; };
 		50CF91F32B1F847E0098388D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF91F22B1F847E0098388D /* AppDelegate.swift */; };
 		50CF91F52B1F847E0098388D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF91F42B1F847E0098388D /* SceneDelegate.swift */; };
 		50CF91F72B1F847E0098388D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF91F62B1F847E0098388D /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501845C02B20E87F009BCA7A /* MyFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = testMyFramework;
+			packageProductDependencies = (
+				501845BF2B20E87F009BCA7A /* MyFramework */,
+			);
 			productName = testMyFramework;
 			productReference = 50CF91EF2B1F847E0098388D /* testMyFramework.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 50CF91E62B1F847D0098388D;
+			packageReferences = (
+				501845BE2B20E87F009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */,
+			);
 			productRefGroup = 50CF91F02B1F847E0098388D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -601,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		501845BE2B20E87F009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shujataliz/MyFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		501845BF2B20E87F009BCA7A /* MyFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 501845BE2B20E87F009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */;
+			productName = MyFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50CF91E72B1F847D0098388D /* Project object */;
 }
