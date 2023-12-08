@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		501845C02B20E87F009BCA7A /* MyFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 501845BF2B20E87F009BCA7A /* MyFramework */; };
 		501845C42B2240E7009BCA7A /* MyFrameClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501845C32B2240E7009BCA7A /* MyFrameClass.swift */; };
 		501845C72B2269E5009BCA7A /* PlayingCard in Frameworks */ = {isa = PBXBuildFile; productRef = 501845C62B2269E5009BCA7A /* PlayingCard */; };
+		501845CD2B237BB7009BCA7A /* MyFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 501845CC2B237BB7009BCA7A /* MyFramework */; };
 		50CF91F32B1F847E0098388D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF91F22B1F847E0098388D /* AppDelegate.swift */; };
 		50CF91F52B1F847E0098388D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF91F42B1F847E0098388D /* SceneDelegate.swift */; };
 		50CF91F72B1F847E0098388D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF91F62B1F847E0098388D /* ViewController.swift */; };
@@ -60,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501845C02B20E87F009BCA7A /* MyFramework in Frameworks */,
 				501845C72B2269E5009BCA7A /* PlayingCard in Frameworks */,
+				501845CD2B237BB7009BCA7A /* MyFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +151,8 @@
 			);
 			name = testMyFramework;
 			packageProductDependencies = (
-				501845BF2B20E87F009BCA7A /* MyFramework */,
 				501845C62B2269E5009BCA7A /* PlayingCard */,
+				501845CC2B237BB7009BCA7A /* MyFramework */,
 			);
 			productName = testMyFramework;
 			productReference = 50CF91EF2B1F847E0098388D /* testMyFramework.app */;
@@ -227,8 +227,8 @@
 			);
 			mainGroup = 50CF91E62B1F847D0098388D;
 			packageReferences = (
-				501845BE2B20E87F009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */,
 				501845C52B2269E5009BCA7A /* XCRemoteSwiftPackageReference "example-package-playingcard" */,
+				501845CB2B237BB7009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */,
 			);
 			productRefGroup = 50CF91F02B1F847E0098388D /* Products */;
 			projectDirPath = "";
@@ -621,14 +621,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		501845BE2B20E87F009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/shujataliz/MyFramework.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.11;
-			};
-		};
 		501845C52B2269E5009BCA7A /* XCRemoteSwiftPackageReference "example-package-playingcard" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/example-package-playingcard.git";
@@ -637,18 +629,26 @@
 				minimumVersion = 3.0.5;
 			};
 		};
+		501845CB2B237BB7009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shujataliz/MyFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.21;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		501845BF2B20E87F009BCA7A /* MyFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 501845BE2B20E87F009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */;
-			productName = MyFramework;
-		};
 		501845C62B2269E5009BCA7A /* PlayingCard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 501845C52B2269E5009BCA7A /* XCRemoteSwiftPackageReference "example-package-playingcard" */;
 			productName = PlayingCard;
+		};
+		501845CC2B237BB7009BCA7A /* MyFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 501845CB2B237BB7009BCA7A /* XCRemoteSwiftPackageReference "MyFramework" */;
+			productName = MyFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
