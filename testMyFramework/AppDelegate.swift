@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         MyFramework.disableCopyPasteSwizzleEnterprise()
-        MyFrameClass.disableScreenRecording()
+        MirrorHelper.disableScreenRecording()
+        MySplashHelper.registerSplashScreenforBackground()
         
         
         return true

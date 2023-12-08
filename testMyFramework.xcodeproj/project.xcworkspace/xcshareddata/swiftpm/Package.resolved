@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shujataliz/MyFramework.git",
       "state" : {
-        "revision" : "15fd7dd7d19dbf6cbfe1f037b0848380c02709fa",
-        "version" : "1.0.22"
+        "revision" : "72896021d0d8c71196f11ddcbf49d9224f3e21f8",
+        "version" : "1.0.25"
       }
     }
   ],
