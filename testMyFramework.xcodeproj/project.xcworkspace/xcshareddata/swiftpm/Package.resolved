@@ -1,21 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "example-package-playingcard",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/example-package-playingcard.git",
-      "state" : {
-        "revision" : "39ddabb01e8102ab548a8c6bb3eb20b15f3b4fbc",
-        "version" : "3.0.5"
-      }
-    },
-    {
       "identity" : "myframework",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shujataliz/MyFramework.git",
       "state" : {
         "revision" : "15fd7dd7d19dbf6cbfe1f037b0848380c02709fa",
-        "version" : "1.0.21"
+        "version" : "1.0.22"
       }
     }
   ],
